@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bharath.portfolio": {
+    "Personal-Portfolio-Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bharath.portfolio",
+            "outputPath": "dist/Personal-Portfolio-Angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bharath.portfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bharath.portfolio:build:production"
+              "browserTarget": "Personal-Portfolio-Angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bharath.portfolio:build"
+            "browserTarget": "Personal-Portfolio-Angular:build"
           }
         },
         "test": {
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bharath.portfolio:serve"
+            "devServerTarget": "Personal-Portfolio-Angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bharath.portfolio:serve:production"
+              "devServerTarget": "Personal-Portfolio-Angular:serve:production"
             }
           }
         },
@@ -129,7 +129,7 @@
       }
     }
   },
-  "defaultProject": "bharath.portfolio",
+  "defaultProject": "Personal-Portfolio-Angular",
   "cli": {
     "analytics": "d5d9f68b-dce0-4de7-a15e-56e2bbd99b5e"
   }
